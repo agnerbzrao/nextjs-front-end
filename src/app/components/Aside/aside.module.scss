@@ -1,0 +1,6 @@
+@use "../../global-styles/global-variables";
+.aside {
+  border-radius: 8px;
+  background: global-variables.$aside-gradient;
+  padding: 40px 16px;
+}

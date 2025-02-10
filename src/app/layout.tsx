@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
-
-import "./globals.scss";
-import { Aside } from "@/app/components/Aside";
+import styles from "./page.module.scss";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,10 +14,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body>
-        <div className="app-container">
-          <Aside />
-          {children}
-        </div>
+        <div className={styles.containerLogin}>{children}</div>
       </body>
     </html>
   );

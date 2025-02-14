@@ -1,12 +1,15 @@
 @use "../../global-styles/global-variables";
 .aside {
-  border-radius: 8px;
   background: global-variables.$aside-gradient;
   padding: 40px 16px;
-  width: 18vw;
+  width: 23vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 1.875rem 0.9rem 3rem;
+  .imgParceiroPrixLogo {
+    height: auto;
+    width: 10vw;
+  }
 }

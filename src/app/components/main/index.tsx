@@ -13,16 +13,30 @@ export const Main = () => {
           </div>
           <div className={styles.headerMainLevelTwoRightButtonLogout}>
             <Image
-              src={`${AZURE_BLOB_URL}/front-end-images/login-page/exit_icon.svg`}
-              alt="multiplos-triangulos"
+              src={`${AZURE_BLOB_URL}/front-end-images/main-component/exit_icon.svg`}
+              alt="exit-icon"
               width={0}
               height={0}
-              className={styles.imgTriangulos}
+              className={styles.exitIcon}
             ></Image>
           </div>
         </div>
+        <div className={styles.headerMainLevelOneRight}>
+          <a
+            href="https://www.toledobrasil.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src={`${AZURE_BLOB_URL}/front-end-images/main-component/toledobrasil-logo.svg`}
+              alt="toledobrasil-logo"
+              width={0}
+              height={0}
+              className={styles.toledoLogo}
+            ></Image>
+          </a>
+        </div>
       </div>
-      <div className={styles.headerMainLevelOneRight}></div>
     </main>
   );
 };

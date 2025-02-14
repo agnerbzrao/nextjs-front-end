@@ -3,17 +3,13 @@
 .main {
   display: grid;
   grid-template-rows: 70px calc(-70px + 100vh);
+  width: 100vw;
   .headerMain {
-    @media screen and (max-width: 2000px) {
-      align-items: center;
-      height: 480px;
-    }
-    gap: 1rem;
-    background-color: global-variables.$border-bottom-collor;
-    padding: 2rem;
     display: flex;
-    width: 100%;
-    justify-content: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(233, 235, 236);
+    padding: 0px 2rem;
     .headerMainLevelOneLeft {
       display: flex;
       width: 100%;
@@ -39,18 +35,22 @@
         }
       }
       .headerMainLevelTwoRightButtonLogout {
-        height: 100%;
-        padding: 1rem;
-        display: flex;
-        justify-content: right;
+        padding: 0 0.6rem;
         background: rgb(239, 243, 246);
-        transition: 0.1sease-in;
-        align-self: flex-end;
+        margin: 0 0 0 1rem;
+        height: 69px;
+        .exitIcon {
+          width: 20px;
+          height: 70px;
+        }
       }
     }
     .headerMainLevelOneRight {
-      padding: 1rem 0px;
       height: 100%;
+      .toledoLogo {
+        width: 107px;
+        height: 69px;
+      }
     }
   }
 }

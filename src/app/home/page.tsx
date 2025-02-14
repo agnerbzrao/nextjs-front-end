@@ -1,9 +1,12 @@
+"use client";
 import { Aside } from "@/app/components/Aside";
+import { Main } from "../components/main";
+import styles from "./home.module.scss";
 export default function HomePage() {
   return (
-    <div className="app-container">
+    <div className={styles.home}>
       <Aside />
-      <main>Olá Home</main>
+      <Main />
     </div>
   );
 }
